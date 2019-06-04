@@ -1,4 +1,4 @@
-package baekjun.fourteen;
+package baekjun.fourteenth;
 
 import java.io.IOException;
 import java.io.BufferedReader;

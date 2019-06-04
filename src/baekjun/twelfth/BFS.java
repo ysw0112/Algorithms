@@ -1,4 +1,4 @@
-package baekjun.twelventh;
+package baekjun.twelfth;
 
 import java.util.HashMap;
 import java.util.LinkedList;
