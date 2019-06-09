@@ -12,6 +12,13 @@ public class BonAppetit {
   // Complete the bonAppetit function below.
   static void bonAppetit(List<Integer> bill, int k, int b) {
 
+    bill.remove(k);
+    int sum = bill.stream().mapToInt(Integer::intValue).sum()/2;
+    if(sum < b){
+      System.out.println(b-sum);
+    }else{
+      System.out.println("Bon Appetit");
+    }
 
   }
 
