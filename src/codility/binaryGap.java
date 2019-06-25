@@ -6,6 +6,7 @@ public class binaryGap{
 
     public int solution(int n){
         String bina = Integer.toBinaryString(n);
+        System.out.println(bina);
         String pro[] = bina.split("0");
         int zeroCnt = 1;
         int N = 0;
@@ -29,7 +30,7 @@ public class binaryGap{
 
     public static void main(String[] args){
         binaryGap b = new binaryGap();
-        int a = b.solution(9);
+        int a = b.solution(529);
         System.out.println(a);
 //        b.solution(17);
     }
