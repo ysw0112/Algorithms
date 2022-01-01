@@ -10,7 +10,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
-
 class Result2 {
 
     /*
@@ -27,26 +26,25 @@ class Result2 {
         int[] checkArr = new int[ids.size()];
         int count = 0;
 
-        for (int i=0; i<ids.size(); i++){
-            checkArr[ids.get(i)-1]++;
+        for (int i = 0; i < ids.size(); i++) {
+            checkArr[ids.get(i) - 1]++;
         }
         Arrays.sort(checkArr);
 
-        for (int i=0; i<checkArr.length; i++){
-            if(m - checkArr[i] >= 0){
+        for (int i = 0; i < checkArr.length; i++) {
+            if (m - checkArr[i] >= 0) {
                 m = m - checkArr[i];
                 checkArr[i] = 0;
-            }else if(m == 0){
+            } else if (m == 0) {
                 break;
-            }
-            else{
-                checkArr[i] = Math.abs(m-checkArr[i]);
+            } else {
+                checkArr[i] = Math.abs(m - checkArr[i]);
                 break;
             }
         }
 
-        for (int i=0; i<checkArr.length; i++){
-            if(checkArr[i]>0) count++;
+        for (int i = 0; i < checkArr.length; i++) {
+            if (checkArr[i] > 0) count++;
         }
 
         return count;

@@ -17,30 +17,30 @@ public class baekjoon10828 {
 
         ArrayList list = new ArrayList();
 
-        for (int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             String input = br.readLine();
             String first = input.split(" ")[0];
-            if (first.equals("push")){
+            if (first.equals("push")) {
                 int value = Integer.parseInt(input.split(" ")[1]);
                 stack.push(value);
-            } else if (first.equals("pop")){
-                if(stack.isEmpty()){
+            } else if (first.equals("pop")) {
+                if (stack.isEmpty()) {
                     System.out.println(-1);
-                }else{
+                } else {
                     System.out.println(stack.pop());
                 }
-            } else if (first.equals("size")){
+            } else if (first.equals("size")) {
                 System.out.println(stack.size());
-            } else if (first.equals("empty")){
-                if(stack.isEmpty()){
+            } else if (first.equals("empty")) {
+                if (stack.isEmpty()) {
                     System.out.println(1);
-                }else{
+                } else {
                     System.out.println(0);
                 }
-            } else if (first.equals("top")){
-                if(stack.isEmpty()){
+            } else if (first.equals("top")) {
+                if (stack.isEmpty()) {
                     System.out.println(-1);
-                }else{
+                } else {
                     System.out.println(stack.peek());
                 }
             }

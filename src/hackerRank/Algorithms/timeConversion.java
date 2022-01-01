@@ -13,20 +13,18 @@ public class timeConversion {
          */
         String result = "";
 
+        result = s.substring(0, 8);
         int hour = Integer.parseInt(s.split(":")[0]);
-        if(s.matches("(.*)(PM)")){
-            result = s.replace("PM","");
-            if(hour != 12){
+        if (s.matches("(.*)(PM)")) {
+            if (hour != 12) {
                 hour += 12;
-                result = result.replace(String.valueOf(s.split(":")[0]),String.valueOf(hour));
+                result = result.replace(String.valueOf(s.split(":")[0]), String.valueOf(hour));
             }
-        }else if(s.matches("(.*)(AM)")){
-            result = s.replace("AM","");
-            if(hour == 12){
-                result = result.replace(String.valueOf(s.split(":")[0]),String.valueOf("00"));
+        } else if (s.matches("(.*)(AM)")) {
+            if (hour == 12) {
+                result = result.replace(String.valueOf(s.split(":")[0]), String.valueOf("00"));
             }
         }
-
         return result;
     }
 

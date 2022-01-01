@@ -10,9 +10,9 @@ public class baekjoon1152 {
 
         String input = br.readLine().trim();
 
-        if(input.isEmpty()){
+        if (input.isEmpty()) {
             System.out.println(0);
-        }else{
+        } else {
             System.out.println(input.split(" ").length);
         }
     }

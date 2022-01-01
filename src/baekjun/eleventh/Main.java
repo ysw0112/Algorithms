@@ -10,6 +10,7 @@ public class Main {
         System.out.println(stack);
     }
 }
+
 class Test {
     private int size = 0;
     private SNode top = null;
@@ -22,18 +23,20 @@ class Test {
         top = node;
         size++;
     }
+
     private class SNode {
         int data;
         private SNode next;
     }
 
     public void top() {
-        if (top == null){
+        if (top == null) {
             System.out.println(-1);
         } else {
             System.out.println(top.data);
         }
     }
+
     public void empty() {
         if (size == 0) {
             System.out.println(1);
@@ -41,9 +44,11 @@ class Test {
             System.out.println(0);
         }
     }
+
     public void size() {
         System.out.println(size);
     }
+
     public void pop() {
         if (size == 0) {
             System.out.println(-1);

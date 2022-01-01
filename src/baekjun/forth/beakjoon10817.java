@@ -9,7 +9,7 @@ public class beakjoon10817 {
         Scanner c = new Scanner(System.in);
         int[] numArr = new int[3];
 
-        for(int i=0; i<numArr.length; i++){
+        for (int i = 0; i < numArr.length; i++) {
             numArr[i] = c.nextInt();
         }
         Arrays.sort(numArr);

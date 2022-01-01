@@ -12,7 +12,7 @@ public class beakjoon4344 {
 
         int caseCnt = 0;
 
-        for (int i=0; i<testCaseCnt; i++){
+        for (int i = 0; i < testCaseCnt; i++) {
             int sum = 0;
             int average = 0;
             int avgUpStudentCnt = 0;
@@ -20,17 +20,17 @@ public class beakjoon4344 {
             testCase[i] = br.readLine();
             caseCnt = Integer.parseInt(testCase[i].split(" ")[0]);
 
-            for (int j=1; j<=caseCnt; j++){
+            for (int j = 1; j <= caseCnt; j++) {
                 sum += Integer.parseInt(testCase[i].split(" ")[j]);
             }
-            average = sum/caseCnt;
+            average = sum / caseCnt;
 
-            for (int j=1; j<=caseCnt; j++){
-                if (Integer.parseInt(testCase[i].split(" ")[j]) > average){
+            for (int j = 1; j <= caseCnt; j++) {
+                if (Integer.parseInt(testCase[i].split(" ")[j]) > average) {
                     avgUpStudentCnt++;
                 }
             }
-            System.out.println(String.format("%.3f",(double)avgUpStudentCnt/caseCnt*100)+"%");
+            System.out.println(String.format("%.3f", (double) avgUpStudentCnt / caseCnt * 100) + "%");
         }
     }
 }

@@ -11,21 +11,21 @@ public class baekjoon1110 {
         int cycle = 0;
         String result = "";
 
-        if(checkInput < 10){
+        if (checkInput < 10) {
             inputValue = String.format("%02d", checkInput);
         }
 
         String temp = inputValue;
-        while (true){
+        while (true) {
             int left = Integer.parseInt(temp.split("")[0]);
             int right = Integer.parseInt(temp.split("")[1]);
-            int sumLastNumber = (left + right)%10;
+            int sumLastNumber = (left + right) % 10;
             result = String.valueOf(right) + String.valueOf(sumLastNumber);
 
             cycle++;
-            if(Integer.parseInt(inputValue) == Integer.parseInt(result)){
+            if (Integer.parseInt(inputValue) == Integer.parseInt(result)) {
                 break;
-            }else{
+            } else {
                 temp = result;
             }
         }

@@ -15,11 +15,11 @@ public class gradingStudents {
          * Write your code here.
          */
         int[] answer = new int[grades.length];
-        for(int i=0; i<grades.length; i++){
-            int mod = grades[i]%5;
-            if(grades[i] < 38 || mod < 3) {
+        for (int i = 0; i < grades.length; i++) {
+            int mod = grades[i] % 5;
+            if (grades[i] < 38 || mod < 3) {
                 answer[i] = grades[i];
-            }else{
+            } else {
                 answer[i] = grades[i] + 5 - mod;
             }
         }

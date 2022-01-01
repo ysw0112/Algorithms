@@ -9,7 +9,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
-
 class Result3 {
 
     /*
@@ -31,11 +30,11 @@ class Result3 {
         int workDayCount = 0;
         int patternSum = 0;
 
-        for(int i=0; i<7; i++){
-            if(pattern.charAt(i) == 63){
+        for (int i = 0; i < 7; i++) {
+            if (pattern.charAt(i) == 63) {
                 workDayCount++;
-            }else{
-                patternSum += Integer.parseInt(pattern.substring(i,i+1));
+            } else {
+                patternSum += Integer.parseInt(pattern.substring(i, i + 1));
             }
         }
 

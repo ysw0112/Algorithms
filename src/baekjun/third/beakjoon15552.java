@@ -7,17 +7,17 @@ public class beakjoon15552 {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter w = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int count=0;
+        int count = 0;
 
-        String value ="";
+        String value = "";
         count = Integer.parseInt(r.readLine());
 
-        if(count > 1000000) return;
+        if (count > 1000000) return;
 
-        for (int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             value = r.readLine();
             String[] temp = value.split(" ");
-            w.write( Integer.parseInt(temp[0])+Integer.parseInt(temp[1])+"\n");
+            w.write(Integer.parseInt(temp[0]) + Integer.parseInt(temp[1]) + "\n");
         }
         w.flush();
     }

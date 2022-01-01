@@ -11,19 +11,19 @@ public class plusMinus {
         int zero = 0;
         float fennel = arr.length;
 
-        for(int i=0; i<arr.length; i++){
-            if (arr[i] > 0){
-                positive ++;
-            } else if (arr[i] < 0){
-                negative ++;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                positive++;
+            } else if (arr[i] < 0) {
+                negative++;
             } else {
-                zero ++;
+                zero++;
             }
         }
 
-        System.out.println(String.format("%.6f", positive/fennel));
-        System.out.println(String.format("%.6f", negative/fennel));
-        System.out.println(String.format("%.6f", zero/fennel));
+        System.out.println(String.format("%.6f", positive / fennel));
+        System.out.println(String.format("%.6f", negative / fennel));
+        System.out.println(String.format("%.6f", zero / fennel));
     }
 
     private static final Scanner scanner = new Scanner(System.in);

@@ -12,13 +12,13 @@ public class baekjoon1427 {
         String[] input = br.readLine().split("");
         String output = "";
 
-        for(int i=0; i<input.length; i++){
+        for (int i = 0; i < input.length; i++) {
             int cnt = Integer.parseInt(input[i]);
             result[cnt]++;
         }
 
-        for (int i = result.length - 1; i>=0; i--){
-            if(result[i] != 0) {
+        for (int i = result.length - 1; i >= 0; i--) {
+            if (result[i] != 0) {
                 for (int j = 0; j < result[i]; j++) {
                     output = output + String.valueOf(i);
                 }

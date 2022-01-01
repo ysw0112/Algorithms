@@ -12,18 +12,18 @@ public class baekjoon2577 {
         int[] checkNumber = new int[10];
         String result = "";
 
-        for (int i=0; i<input.length; i++) {
+        for (int i = 0; i < input.length; i++) {
             input[i] = Integer.parseInt(br.readLine());
         }
 
         result = String.valueOf(input[0] * input[1] * input[2]);
 
-        for (int i=0; i<result.length(); i++){
+        for (int i = 0; i < result.length(); i++) {
             int check = Integer.parseInt(result.split("")[i]);
             checkNumber[check]++;
         }
 
-        for (int i=0; i<checkNumber.length; i++){
+        for (int i = 0; i < checkNumber.length; i++) {
             System.out.println(checkNumber[i]);
         }
     }

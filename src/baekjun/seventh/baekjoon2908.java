@@ -13,17 +13,17 @@ public class baekjoon2908 {
 
 
         inputArr = br.readLine().split(" ");
-        for(int i=0; i<inputArr.length; i++){
+        for (int i = 0; i < inputArr.length; i++) {
             String check = inputArr[i];
             String temp = "";
-            for (int j=check.length()-1; j>-1; j--){
-                if(check.charAt(j) == '0') return;
+            for (int j = check.length() - 1; j > -1; j--) {
+                if (check.charAt(j) == '0') return;
                 temp += check.charAt(j);
             }
             inputArr[i] = temp;
         }
-        for (int i=0; i<2; i++){
-            if(max < Integer.parseInt(inputArr[i])){
+        for (int i = 0; i < 2; i++) {
+            if (max < Integer.parseInt(inputArr[i])) {
                 max = Integer.parseInt(inputArr[i]);
             }
         }

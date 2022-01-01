@@ -8,22 +8,23 @@ public class OddOccurrencesInArray {
     public static int solution(int[] A) {
         int result = 0;
 
-        for(int i=0; i<A.length; i++){
+        for (int i = 0; i < A.length; i++) {
             result = result ^ A[i];
             System.out.println(result);
         }
         return result;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 //        int[] arr = {5,9,3,9,3,9,9};
 //        solution(arr);
-        int[] A = {5,9,3,9,3,9,9};
+        int[] A = {5, 9, 3, 9, 3, 9, 9};
         Set<Integer> set = new HashSet<>();
         set.add(1);
         set.add(1);
         set.add(3);
 
-        for(Iterator i = set.iterator(); i.hasNext();){
+        for (Iterator i = set.iterator(); i.hasNext(); ) {
             System.out.println(set.contains(i));
         }
 //        for(int i : A){

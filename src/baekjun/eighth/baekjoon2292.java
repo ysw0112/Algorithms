@@ -12,8 +12,8 @@ public class baekjoon2292 {
         int result = 1;
         int check = 1;
         int count = 6;
-        while(true){
-            if(input <= check){
+        while (true) {
+            if (input <= check) {
                 break;
             }
             check += count;
@@ -21,7 +21,7 @@ public class baekjoon2292 {
             result++;
         }
 
-        bw.write(result+"");
+        bw.write(result + "");
         bw.flush();
 
         br.close();

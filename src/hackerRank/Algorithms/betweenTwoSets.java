@@ -5,20 +5,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class betweenTwoSets {
-  public static int gcd(int a, int b) {
-    while (a > 0 && b > 0) {
-      System.out.println(a + " " + b);
-      if (a >= b) {
-        a = a % b;
-      }
-      else {
-        b = b % a;
-      }
+    public static int gcd(int a, int b) {
+        while (a > 0 && b > 0) {
+            System.out.println(a + " " + b);
+            if (a >= b) {
+                a = a % b;
+            } else {
+                b = b % a;
+            }
+        }
+
+        return a + b;
     }
 
-    return a + b;
-  }
-  public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 //    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
 //    String inputValue = br.readLine();
@@ -35,6 +35,6 @@ public class betweenTwoSets {
 //    }
 //    System.out.println(a.length+ " " + b.length);
 
-    System.out.println(gcd(72,126));
-  }
+        System.out.println(gcd(72, 126));
+    }
 }

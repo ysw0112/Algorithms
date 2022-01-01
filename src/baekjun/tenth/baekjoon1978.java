@@ -12,14 +12,14 @@ public class baekjoon1978 {
         String input = br.readLine();
 
         int count = 0;
-        for(int i=0; i<inputCount; i++){
+        for (int i = 0; i < inputCount; i++) {
             result[i] = Integer.parseInt(input.split(" ")[i]);
             int temp = result[i];
-            if(temp == 2) count++;
-            else if(temp != 1){
-                for (int j=2; j<temp; j++){
-                    if(temp%j == 0) break;
-                    else if(j == temp - 1)
+            if (temp == 2) count++;
+            else if (temp != 1) {
+                for (int j = 2; j < temp; j++) {
+                    if (temp % j == 0) break;
+                    else if (j == temp - 1)
                         count++;
                 }
             }

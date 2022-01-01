@@ -10,14 +10,15 @@ public class birthdayCakeCandles {
         int count = 0;
         int max = -1;
 
-        for(int i=0; i<years; i++){
-            if(max < ar[i]) max = ar[i];
+        for (int i = 0; i < years; i++) {
+            if (max < ar[i]) max = ar[i];
         }
-        for(int i=0; i<years; i++){
-            if(max == ar[i]) count++;
+        for (int i = 0; i < years; i++) {
+            if (max == ar[i]) count++;
         }
         return count;
     }
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {

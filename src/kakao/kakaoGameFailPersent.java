@@ -11,24 +11,24 @@ public class kakaoGameFailPersent {
         int userCount = stages.length;
         int clearCount = 0;
 
-        for (int i=1; i<N+1; i++){
+        for (int i = 1; i < N + 1; i++) {
             userCount = userCount - clearCount;
             clearCount = 0;
-            for (int j=0; j<stages.length; j++){
-                if(stages[j] == i){
+            for (int j = 0; j < stages.length; j++) {
+                if (stages[j] == i) {
                     clearCount++;
                 }
             }
-            sortArr[i-1] = String.valueOf(clearCount/(double)userCount)+"===="+i;
+            sortArr[i - 1] = String.valueOf(clearCount / (double) userCount) + "====" + i;
 //            userMap.put(clearCount/(double)userCount,i-1);
         }
 
         String temp = "";
-        for(int i=0; i<sortArr.length; i++){
-            for(int j=i+1; j<sortArr.length; j++){
+        for (int i = 0; i < sortArr.length; i++) {
+            for (int j = i + 1; j < sortArr.length; j++) {
                 double d1 = Double.parseDouble(sortArr[i].split("====")[0]);
                 double d2 = Double.parseDouble(sortArr[j].split("====")[0]);
-                if(d1 < d2){
+                if (d1 < d2) {
                     temp = sortArr[i];
                     sortArr[i] = sortArr[j];
                     sortArr[j] = temp;
@@ -45,7 +45,8 @@ public class kakaoGameFailPersent {
 
         return answer;
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
         solution(5, stages);
 //        System.out.println(3.0-1);

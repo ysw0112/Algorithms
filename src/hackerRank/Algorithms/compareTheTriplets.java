@@ -12,10 +12,10 @@ public class compareTheTriplets {
         int left = 0;
         int right = 0;
 
-        for(int i=0; i<a.size(); i++){
-            if(a.get(i) > b.get(i)){
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) > b.get(i)) {
                 left++;
-            }else if(a.get(i) < b.get(i)){
+            } else if (a.get(i) < b.get(i)) {
                 right++;
             }
         }

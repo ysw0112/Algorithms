@@ -7,13 +7,13 @@ import java.util.regex.Pattern;
 
 public class dartGame {
 
-    public static String solution(String input){
+    public static String solution(String input) {
         String result = "";
-        for (char c : input.toCharArray()){
-            if(Character.isDigit(c)){
+        for (char c : input.toCharArray()) {
+            if (Character.isDigit(c)) {
                 result = result + c;
-            }else{
-                result =  result + "!!!!";
+            } else {
+                result = result + "!!!!";
             }
         }
         System.out.println(result);
@@ -27,7 +27,7 @@ public class dartGame {
         return result;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.println(solution("10S2D*3T"));
     }
 }

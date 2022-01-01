@@ -13,7 +13,7 @@ public class kangaroo {
     // Complete the kangaroo function below.
     static String kangaroo(int x1, int v1, int x2, int v2) {
 
-        if(v1>v2 && ((x2-x1)%(v1-v2))==0){
+        if (v1 > v2 && ((x2 - x1) % (v1 - v2)) == 0) {
             return "YES";
         }
         return "NO";

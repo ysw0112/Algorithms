@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class beakjoon2558 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner c = new Scanner(System.in);
         List<Integer> resultList = new ArrayList<>();
 
-        while(c.hasNextInt()){
+        while (c.hasNextInt()) {
             int input = c.nextInt();
             c.nextLine();
             resultList.add(input);
-            if(resultList.size() == 2){
+            if (resultList.size() == 2) {
                 break;
             }
 

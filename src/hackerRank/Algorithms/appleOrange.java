@@ -13,17 +13,17 @@ public class appleOrange {
     static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
 
         int appleCount = 0;
-        for(int i=0; i<apples.length; i++){
+        for (int i = 0; i < apples.length; i++) {
             int distance = a + apples[i];
-            if(distance >= s && distance <= t){
+            if (distance >= s && distance <= t) {
                 appleCount++;
             }
         }
 
         int orangeCount = 0;
-        for(int i=0; i<oranges.length; i++){
+        for (int i = 0; i < oranges.length; i++) {
             int distance = b + oranges[i];
-            if(distance >= s && distance <= t){
+            if (distance >= s && distance <= t) {
                 orangeCount++;
             }
         }

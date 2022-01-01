@@ -10,15 +10,15 @@ import java.util.regex.*;
 
 public class CountingValleys {
 
-  // Complete the countingValleys function below.
-  static int countingValleys(int n, String s) {
-    int result = 0;
-    return result;
-  }
+    // Complete the countingValleys function below.
+    static int countingValleys(int n, String s) {
+        int result = 0;
+        return result;
+    }
 
-  private static final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-  public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 
 //    int n = scanner.nextInt();
 //    scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -28,30 +28,30 @@ public class CountingValleys {
 //    int result = countingValleys(n, s);
 //    System.out.println(result);
 //    scanner.close();
-    Scanner scan = new Scanner(System.in);
-    int n = scan.nextInt();
-    char[] hike = scan.next().toCharArray();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        char[] hike = scan.next().toCharArray();
 
-    int count = 0;
-    int altitude = 0;
+        int count = 0;
+        int altitude = 0;
 
-    for(char c : hike) {
-      // Step up
-      if(c == 'U') {
-        if(altitude == -1) {
-          count++;
+        for (char c : hike) {
+            // Step up
+            if (c == 'U') {
+                if (altitude == -1) {
+                    count++;
+                }
+                altitude++;
+            }
+            // Step down
+            else {
+                altitude--;
+            }
         }
-        altitude++;
-      }
-      // Step down
-      else {
-        altitude--;
-      }
+
+        scan.close();
+
+        System.out.println(count);
+
     }
-
-    scan.close();
-
-    System.out.println(count);
-
-  }
 }

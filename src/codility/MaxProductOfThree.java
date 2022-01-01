@@ -3,7 +3,7 @@ package codility;
 import java.util.Arrays;
 
 public class MaxProductOfThree {
-    public static int solution(int[] A){
+    public static int solution(int[] A) {
         Arrays.sort(A);
 
 //        if (A[A.length - 1] < 0) {
@@ -20,8 +20,8 @@ public class MaxProductOfThree {
         return p1 > p2 ? p1 : p2;
     }
 
-    public static void main(String[] args){
-        int[] arr = {-1,-7,-5,-2,-3};
+    public static void main(String[] args) {
+        int[] arr = {-1, -7, -5, -2, -3};
 
         System.out.println(solution(arr));
     }

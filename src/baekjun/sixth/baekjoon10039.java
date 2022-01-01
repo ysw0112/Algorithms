@@ -11,14 +11,14 @@ public class baekjoon10039 {
         int sum = 0;
         int[] score = new int[count];
 
-        for (int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             score[i] = Integer.parseInt(br.readLine());
             if (score[i] % 5 != 0) return;
-            if (score[i] < 40){
+            if (score[i] < 40) {
                 score[i] = 40;
             }
             sum += score[i];
         }
-        System.out.println(sum/count);
+        System.out.println(sum / count);
     }
 }

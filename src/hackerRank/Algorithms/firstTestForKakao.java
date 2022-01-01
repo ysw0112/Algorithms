@@ -9,7 +9,6 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 
-
 class Result {
 
     /*
@@ -18,7 +17,7 @@ class Result {
      * The function is expected to return an INTEGER.
      * The function accepts following parameters:
      *  1. INTEGER m
-     *  2. STRING_ARRAY data
+     *  2. STRING_ARRAY data.txt
      *  4
      *  5
      *  YYYY
@@ -33,16 +32,16 @@ class Result {
         int maximum = 0;
         int count = 0;
 
-        for(int i=0; i<data.size(); i++){
+        for (int i = 0; i < data.size(); i++) {
 
-            if(m == data.get(i).length() && data.get(i).toUpperCase().matches("^Y*$")){
+            if (m == data.get(i).length() && data.get(i).toUpperCase().matches("^Y*$")) {
                 count++;
             }
 
-            if(count > maximum){
+            if (count > maximum) {
                 maximum = count;
-            }else{
-                count=0;
+            } else {
+                count = 0;
             }
         }
         return maximum;

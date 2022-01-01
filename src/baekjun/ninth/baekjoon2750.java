@@ -12,12 +12,12 @@ public class baekjoon2750 {
         int[] resultArr = new int[count];
         int temp = 0;
 
-        for(int i=0; i<count; i++){
-            resultArr[i] =  Integer.parseInt(br.readLine());
+        for (int i = 0; i < count; i++) {
+            resultArr[i] = Integer.parseInt(br.readLine());
         }
 
-        for(int i=1; i<=count; i++){
-            for(int j=0; j<count-i; j++) {
+        for (int i = 1; i <= count; i++) {
+            for (int j = 0; j < count - i; j++) {
                 if (resultArr[j] > resultArr[j + 1]) {
                     temp = resultArr[j];
                     resultArr[j] = resultArr[j + 1];
@@ -25,7 +25,7 @@ public class baekjoon2750 {
                 }
             }
         }
-        for(int i=0; i<count; i++){
+        for (int i = 0; i < count; i++) {
             System.out.println(resultArr[i]);
         }
     }

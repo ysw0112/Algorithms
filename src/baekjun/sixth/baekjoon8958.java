@@ -12,22 +12,22 @@ public class baekjoon8958 {
         int[] result = new int[inputCnt];
         int sum = 0;
         int tempCnt = 0;
-        for (int i=0; i<inputCnt; i++){
+        for (int i = 0; i < inputCnt; i++) {
             String[] testCase = br.readLine().split("");
-            for (int j=0; j<testCase.length; j++){
-                if(testCase[j].equals("O")){
+            for (int j = 0; j < testCase.length; j++) {
+                if (testCase[j].equals("O")) {
                     tempCnt++;
                     sum += tempCnt;
-                }else{
-                    tempCnt=0;
+                } else {
+                    tempCnt = 0;
                 }
             }
             result[i] = sum;
-            sum=0;
-            tempCnt=0;
+            sum = 0;
+            tempCnt = 0;
         }
 
-        for (int i=0; i<inputCnt; i++){
+        for (int i = 0; i < inputCnt; i++) {
             System.out.println(result[i]);
         }
     }

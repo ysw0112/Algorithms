@@ -5,7 +5,7 @@ import java.util.*;
 
 
 public class test {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         boolean b = false;
         System.out.println(valueOf(b));
         Map<String, List<String>> list = new HashMap();
@@ -14,7 +14,8 @@ public class test {
         list.put("1", supplierNames1);
         System.out.println(list.get("1"));
     }
-    public static Boolean valueOf(boolean b){
+
+    public static Boolean valueOf(boolean b) {
         return b ? Boolean.TRUE : Boolean.FALSE;
     }
 

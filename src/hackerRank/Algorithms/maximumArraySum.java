@@ -15,13 +15,13 @@ public class maximumArraySum {
             long ret = 0;
             TreeSet<Long> tr = new TreeSet<>();
             for (int i = 0; i < k; i++) {
-                sum = (sum+(sc.nextLong() % m))%m;
+                sum = (sum + (sc.nextLong() % m)) % m;
                 System.out.println(sum);
                 tr.add(sum);
                 try {
-                    ret = Math.max(ret, (sum - tr.higher(sum) +m) % m);
+                    ret = Math.max(ret, (sum - tr.higher(sum) + m) % m);
                 } catch (NullPointerException e) {
-                    ret = Math.max(ret,sum);
+                    ret = Math.max(ret, sum);
                 }
             }
             System.out.println(ret);

@@ -11,19 +11,19 @@ public class beakjoon1874 {
 
         int n = Integer.parseInt(br.readLine());
         int[] stack = new int[n];
-        int i, k, max=0, stIdx=0;
+        int i, k, max = 0, stIdx = 0;
 
-        while (n-- > 0){
+        while (n-- > 0) {
             int temp = Integer.parseInt(br.readLine());
 
-            if(temp > max){
-               for(i = max; i < temp; i++){
-                   stack[stIdx++] = i + 1;
-                   sb.append("+\n");
-               }
-               max = temp;
-            }else{
-                if(stack[stIdx-1] != temp) {
+            if (temp > max) {
+                for (i = max; i < temp; i++) {
+                    stack[stIdx++] = i + 1;
+                    sb.append("+\n");
+                }
+                max = temp;
+            } else {
+                if (stack[stIdx - 1] != temp) {
                     System.out.println("NO");
                     return;
                 }
