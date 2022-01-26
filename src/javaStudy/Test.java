@@ -2,6 +2,7 @@ package javaStudy;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -33,18 +34,20 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Test test = new Test(6, 1,"A");
-        Test test1 = new Test(3, 1,"B");
-        Test test2 = new Test(2, 2,"C");
-        Test test3 = new Test(5, 2,"D");
-
-        List<Test> list = new ArrayList<>();
-        list.add(test);
-        list.add(test1);
-        list.add(test2);
-        list.add(test3);
-
-        Map<Long, List<Test>> collect = list.stream().collect(Collectors.groupingBy(Test::getCtlgSeq));
-        System.out.println(collect);
+        Map<Integer, Integer> test = new HashMap<>();
+        test.put(1,1);
+        test.put(2,2);
+        test.put(3,3);
+        test.put(4,4);
+        test.put(5,5);
+        test.put(6,6);
+        test.put(7,7);
+        test.put(8,8);
+        test.put(9,9);
+        test.put(10,10);
+        test.forEach((element,e2) -> {
+            System.out.println(e2);
+            test.get(9);
+        });
     }
 }

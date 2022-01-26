@@ -1,17 +1,29 @@
 package programmers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class 모의고사 {
+    private String bery = "bery";
     public static void main(String[] args) {
         // int[] supoja1 = {1, 2, 3, 4, 5};
         // int[] supoja2 = {2, 1, 2, 3, 2, 4, 2, 5,};
         // int[] supoja3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
-        int[] answer = {1, 2, 3, 4, 5};
-        System.out.println(solution(answer));
+//        int[] answer = {1, 2, 3, 4, 5};
+//        System.out.println(solution(answer));
+
+        모의고사 aa = new 모의고사();
+        aa.test("bb");
+
+    }
+    public void test(String bery){
+        this.bery = "aa";
+        System.out.println(bery);
     }
 
+    private
     static int[] solution(int[] answers) {
         int[] answer = {2, 1, 2, 3, 2};
         int[] supoja1 = {1, 2, 3, 4, 5};
