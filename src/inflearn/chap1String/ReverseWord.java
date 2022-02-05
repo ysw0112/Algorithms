@@ -40,16 +40,24 @@ public class ReverseWord {
         while (left < right){
             char lChar = chars[left];
             char rChar = chars[right];
-            if(isEnglish(lChar) && isEnglish(rChar)){
+//            if(isEnglish(lChar) && isEnglish(rChar)){
+//                chars[left] = rChar;
+//                chars[right] = lChar;
+//                left++;
+//                right--;
+//            } else if(isEnglish(lChar)){
+//                right--;
+//            } else if(isEnglish(rChar)){
+//                left++;
+//            }else {
+//                left++;
+//                right--;
+//            }
+            if(!Character.isAlphabetic(lChar)) left++;
+            else if(!Character.isAlphabetic(rChar)) right--;
+            else{
                 chars[left] = rChar;
                 chars[right] = lChar;
-                left++;
-                right--;
-            } else if(isEnglish(lChar)){
-                right--;
-            } else if(isEnglish(rChar)){
-                left++;
-            }else {
                 left++;
                 right--;
             }
