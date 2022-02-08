@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//입력 - g0en2T0s8eSoft
+//출력 - 208
 public class TakeNumeric {
 
     public static void main(String[] args) throws IOException {

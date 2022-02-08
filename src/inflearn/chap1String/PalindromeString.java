@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//입력 found7, time: study; Yduts; emit, 7Dnuof
+//출력 YES
 public class PalindromeString {
 
     public static void main(String[] args) throws IOException {
