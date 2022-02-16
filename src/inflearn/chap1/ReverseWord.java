@@ -1,4 +1,4 @@
-package inflearn.chap1String;
+package inflearn.chap1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
