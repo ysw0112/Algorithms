@@ -7,6 +7,17 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+M번의 수학성적이 주어지면 멘토와 멘티가 되는 짝을 만들 수 있는 경우가 총 몇 가지 인지 출력
+멘토는 멘티보다 모든 테스트에서 성적이 앞서야 한다.
+입력
+N = 4, M = 3
+3 4 1 2
+4 3 2 1
+3 1 4 2
+출력
+3
+ */
 public class Mentoring {
 
     public static void main(String[] args) throws IOException {

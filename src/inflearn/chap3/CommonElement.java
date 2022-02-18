@@ -9,6 +9,17 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/*
+두 배열의 공통원소를 오름차순으로 출력
+입력
+5
+1 3 9 5 2
+5
+3 2 5 7 8
+출력
+2 3 5
+
+ */
 public class CommonElement {
 
     public static void main(String[] args) throws IOException {
@@ -17,7 +28,8 @@ public class CommonElement {
         List<Integer> first = Arrays.stream(br.readLine().split(" ")).map(Integer::valueOf).collect(Collectors.toList());
         int secondArrayCount = Integer.valueOf(br.readLine()).intValue();
         List<Integer> second = Arrays.stream(br.readLine().split(" ")).map(Integer::valueOf).collect(Collectors.toList());
-        solution(first, second);
+//        solution(first, second);
+        System.out.println(false && false);
     }
 
     private static void solution(List<Integer> first, List<Integer> second) {
