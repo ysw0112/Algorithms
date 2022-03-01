@@ -6,6 +6,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+/*
+올바른괄호
+입력
+(()(()))(()
+출력
+NO
+ */
 public class Example1 {
 
     public static void main(String[] args) throws IOException {
