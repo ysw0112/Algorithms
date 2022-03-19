@@ -26,7 +26,6 @@ public class Example6 {
                 }
             }
             System.out.println();
-            return;
         }
         else {
             check[i]=1;
