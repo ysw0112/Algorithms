@@ -51,7 +51,7 @@ public class Example3 {
         for (int i = 0; i < moves.length; i++) {
             int move = moves[i];
             int yPoint = 1;
-            while (yPoint < board.length){
+            while (yPoint < board.length){ //while문 보다는 board.length를 활용해여 행크기만큼 for문 도는게 더 안정적일거같다.
                 int dolls = board[yPoint][move];
                 if(dolls != 0){
                     board[yPoint][move] = 0;
