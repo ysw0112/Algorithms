@@ -21,6 +21,7 @@ public class Example8 {
         System.out.println(BFS(start, target));
     }
 
+    //Runtime error
     private static int BFS(int start, int target) {
         CHECK[start]=1;
         QUEUE.offer(start);
@@ -35,7 +36,7 @@ public class Example8 {
 
                 for (int j = 0; j < POSSIBLE_VALUES.length; j++) {
                     int afterJump = POSSIBLE_VALUES[j] + current;
-                    if (CHECK[afterJump] == 0 && current > 0){
+                    if (CHECK[afterJump] == 0 && afterJump > 0 && afterJump < 10001){
                         CHECK[afterJump] = 1;
                         QUEUE.offer(afterJump);
                     }
@@ -45,5 +46,4 @@ public class Example8 {
         }
         return 0;
     }
-
 }
